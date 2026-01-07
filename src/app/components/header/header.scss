@@ -1,0 +1,81 @@
+// ==========================================
+// VARIABLES
+// ==========================================
+$color-bg: #111;           // fondo header
+$color-link: #fff;         // texto enlaces
+$color-accent: #8f7170;    // rojo “race”
+$font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$transition: .3s ease;
+
+// ==========================================
+// ESTILOS
+// ==========================================
+header {
+  background: $color-bg;
+  box-shadow: 0 2px 8px rgba(0,0,0,.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  gap: 2.5rem;
+  padding: 0 2rem;
+
+  li {
+    position: relative;
+  }
+
+  a {
+    color: $color-link;
+    text-decoration: none;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+    display: block;
+    transition: color $transition;
+
+    // Línea “race” debajo
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 3px;
+      background: $color-accent;
+      transition: width $transition;
+    }
+
+    &:hover,
+    &.active { // también cuando esté en la ruta actual
+      color: $color-accent;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ==========================================
+// RESPONSIVE (móvil)
+// ==========================================
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    height: auto;
+    gap: 1.2rem;
+    padding: 1.5rem 1rem;
+  }
+}
