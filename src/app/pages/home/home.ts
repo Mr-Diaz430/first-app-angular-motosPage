@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.scss',
 })
 export class Home {
-
+  fotos = Array.from({ length: 8 }, (_, i) => i + 1); 
 }

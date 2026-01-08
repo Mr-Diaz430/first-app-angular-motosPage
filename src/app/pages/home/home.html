@@ -1,1 +1,9 @@
-<p>home works!</p>
+<section class="hero">
+  <h1>Tenemos las mejores marcas y modelos para tu disfrute</h1>
+
+  <div class="grid">
+    @for (f of fotos; track f) {
+      <img [src]="'/img/moto-bike-' + f + '.jpg'" alt="moto">
+    }
+  </div>
+</section>
