@@ -8,7 +8,7 @@ import { ProductsService, Product } from '../../services/products-service';
   templateUrl: './products.html',
   styleUrl: './products.scss'
 })
-export class ProductsComponent {
+export class Products {
   private productsService = inject(ProductsService);
   productos: Product[] = this.productsService.getProducts();
 }

@@ -17,24 +17,24 @@ export class ProductsService {
     { id: 1, nombre: 'Honda Transalp', 
       descripcion: 'Ideal para ciudad',
       precio: 6500, 
-      imagen: 'honda-transalp.jpg' 
+      imagen: '/img/moto-bike-1.jpg' 
     },
     { id: 2, 
       nombre: 'Kawasaki 600',   
       descripcion: 'Potente y elegante', 
       precio: 9200, 
-      imagen: 'kawasaki-600.jpg' 
+      imagen: '/img/moto-bike-2.jpg' 
     },
     { id: 3, 
       nombre: 'Kawasaki KX 250', 
       descripcion: 'Moderna y económica', 
       precio: 3900, 
-      imagen: 'kawasaki-kx250.jpg' },
+      imagen: '/img/moto-bike-3.jpg' },
     { id: 4, 
       nombre: 'Suzuki 1200', 
       descripcion: 'Moderna y económica', 
       precio: 13900, 
-      imagen: 'suzuki-1200.jpg' 
+      imagen: '/img/moto-bike-4.jpg' 
     }
   ]
 

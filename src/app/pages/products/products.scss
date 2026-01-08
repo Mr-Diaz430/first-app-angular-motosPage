@@ -1,0 +1,39 @@
+/* products.component.scss */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.producto img {
+  width: 100%;
+  height: 160px;          // mismo alto para todas
+  object-fit: cover;      // que recorte sin deformar
+  border-radius: 4px;
+}
+
+.producto h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.producto p {
+  margin: 0 0 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.producto strong {
+  color: #d32f2f;
+  font-size: 1.2rem;
+}
